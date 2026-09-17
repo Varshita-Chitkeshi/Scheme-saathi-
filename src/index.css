@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --color-navy-50: #eef5f9;
+  --color-navy-100: #d5e6f0;
+  --color-navy-200: #adcce0;
+  --color-navy-600: #165a82;
+  --color-navy-700: #0f4c75;
+  --color-navy-800: #0b3d5c;
+  --color-navy-900: #08293d;
+
+  --color-teal-50: #eef8f8;
+  --color-teal-100: #d4eeee;
+  --color-teal-200: #a9dbdb;
+  --color-teal-500: #14919b;
+  --color-teal-600: #0d7377;
+  --color-teal-700: #0a5c5f;
+
+  --color-ink-500: #64748b;
+  --color-ink-600: #475569;
+  --color-ink-700: #334155;
+  --color-ink-900: #0f172a;
+
+  --color-surface: #f5f8fa;
+  --color-sand: #f4efe6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f8fa;
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+:focus-visible {
+  outline: 2px solid #0d7377;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 50;
+  background: #0b3d5c;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+}
